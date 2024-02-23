@@ -117,15 +117,12 @@ let inputEL = document.getElementById("input-el");
 // copying text to the clipboard
 
 
-function copyToClipboard1() {
-  let passWordOneE1 = document.getElementById(
-    "generated-password1"
-  ).textContent;
+function copyToClipboard(passwordElementId) {
+  let password = document.getElementById(passwordElementId).textContent.trim();
 
-  if (passWordOneE1.trim() !== "") {
-    // Check if password is not empty
+  if (password !== "") {
     navigator.clipboard
-      .writeText(passWordOneE1)
+      .writeText(password)
       .then(() => {
         alert("Password copied successfully!");
       })
@@ -137,24 +134,14 @@ function copyToClipboard1() {
   }
 }
 
- function copyToClipboard2() {
-   let passWordOneE2 = document.getElementById(
-     "generated-password2"
-   ).textContent;
+// Call the function for each password element
+// have implement the DRY principles
+function copyToClipboard1() {
+  copyToClipboard("generated-password1");
+}
 
-   if (passWordOneE2.trim() !== "") {
-     // Check if password is not empty
-     navigator.clipboard
-       .writeText(passWordOneE2)
-       .then(() => {
-         alert("Password copied successfully!");
-       })
-       .catch((err) => {
-         alert("Failed to copy password:", err);
-       });
-   } else {
-     alert("No password generated. Generate a password first.");
-   }
- }
+function copyToClipboard2() {
+  copyToClipboard("generated-password2");
+}
 
   
