@@ -1,21 +1,22 @@
-## Password Generator
+## Password Generator 
 
-This web application allows users to generate strong, random passwords of varying lengths. It's built with HTML, CSS, and JavaScript, ensuring a responsive and user-friendly experience across devices.
+This web application helps you generate strong, random passwords tailored to your needs. Built with HTML, CSS, and JavaScript, it offers a responsive and user-friendly experience across devices.
 
 **Features:**
 
-* **Generate random passwords:** Choose your desired password length and generate two unique, strong passwords.
-* **Copy to clipboard:** Easily copy the generated passwords to your clipboard by clicking the copy icon next to each password field.
-* **Responsive design:** The application adapts seamlessly to different screen sizes, ensuring optimal usage on any device.
+* **Generate strong passwords:** Create unique, random passwords between 8 and 20 characters in length.
+* **Double the options:** Get two different password suggestions with each click.
+* **Easy copy to clipboard:** Simply click the copy icon next to each password to copy it for safekeeping.
+* **Responsive design:** Enjoy a seamless experience on any device, from desktops to mobile phones.
 
-**Running the project locally:**
+**Running locally:**
 
 1. Clone the repository using `git clone https://github.com/pcodesdev/password-generator.git`.
 2. Open the `index.html` file in your preferred browser.
 
 **Contributing:**
 
-Feel free to fork the project and make contributions! I welcome any suggestions or improvements.
+I welcome contributions and feedback! Feel free to fork the project and share your ideas.
 
 **License:**
 
@@ -27,4 +28,4 @@ You can also try the live demo at: [https://password-generator-v1.vercel.app/](h
 
 **Star this project:**
 
-If you find this project helpful, consider giving it a star on GitHub!
+If you find this project helpful, consider giving it a ⭐!
