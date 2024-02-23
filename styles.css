@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  width: 60%;
+  height: 600px;
+  margin: 2rem auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  height: 95%;
+  background-color: #1f2937;
+  border: 2rem solid #161717;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(224, 234, 233, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(224, 234, 233, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(224, 234, 233, 0.75);
+}
+
+.content-heading {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.content-heading_span {
+  color: #10b981;
+}
+
+.content-paragraph {
+  color: #d5d4d8;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.password-label {
+  font-weight: 400;
+}
+
+.content-btn {
+  margin: 1rem auto;
+  display: inline;
+  background-color: #10b981;
+  color: #d5d4d8;
+  width: 200px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.hr {
+  width: 90%;
+  display: block;
+  height: 2px;
+  color: #1c1c1c;
+}
+
+/* .generated-pwd {
+  flex-direction: row;
+  justify-content: space-around;
+} */
+#generated-password1,
+#generated-password2,
+#input-el {
+  /* display: inline; */
+  width: 200px;
+  height: 30px;
+  font-size: 1rem;
+  padding: 4px 8px;
+  margin: 0.5rem auto;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  background-color: #d5d4d8;
+  color: #1c1c1c;
+}
+
+@media screen and (max-width: 768px) {
+  .content-heading {
+    font-size: 1.5rem;
+  }
+}
