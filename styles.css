@@ -96,13 +96,13 @@ body {
     font-size: 1.5rem;
   }
   .main {
-    width: 60%;
+    width: 70%;
     margin: 1rem auto;
   }
   .password-label {
     color: #fff;
   }
   .content {
-    border: 1rem solid #161717;
+    border: 0.5rem solid #161717;
   }
 }
