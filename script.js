@@ -116,29 +116,45 @@ let inputEL = document.getElementById("input-el");
 
 // copying text to the clipboard
 
- function copyToClipboard1() {
-   let passWordOneEl = document.getElementById("generated-password1").textContent;
 
-  navigator.clipboard.writeText(passWordOneEl)
+function copyToClipboard1() {
+  let passWordOneE1 = document.getElementById(
+    "generated-password1"
+  ).textContent;
+
+  if (passWordOneE1.trim() !== "") {
+    // Check if password is not empty
+    navigator.clipboard
+      .writeText(passWordOneE1)
       .then(() => {
         alert("Password copied successfully!");
       })
-      .catch(err => {
+      .catch((err) => {
         alert("Failed to copy password:", err);
       });
+  } else {
+    alert("No password generated. Generate a password first.");
+  }
 }
-  
-function copyToClipboard2() {
-  let passWordOneE2 = document.getElementById(
-    "generated-password2"
-  ).textContent;
 
-  navigator.clipboard
-    .writeText(passWordOneE2)
-    .then(() => {
-      alert("Password copied successfully!");
-    })
-    .catch((err) => {
-      alert("Failed to copy password:", err);
-    });
-}
+ function copyToClipboard2() {
+   let passWordOneE2 = document.getElementById(
+     "generated-password2"
+   ).textContent;
+
+   if (passWordOneE2.trim() !== "") {
+     // Check if password is not empty
+     navigator.clipboard
+       .writeText(passWordOneE2)
+       .then(() => {
+         alert("Password copied successfully!");
+       })
+       .catch((err) => {
+         alert("Failed to copy password:", err);
+       });
+   } else {
+     alert("No password generated. Generate a password first.");
+   }
+ }
+
+  
