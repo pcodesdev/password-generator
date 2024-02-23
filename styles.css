@@ -97,6 +97,7 @@ body {
   }
   .main {
     width: 90%;
+    height: 100vh;
     margin: 0 auto;
   }
   .password-label {
