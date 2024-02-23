@@ -96,8 +96,8 @@ body {
     font-size: 1.5rem;
   }
   .main {
-    width: 70%;
-    margin: 1rem auto;
+    width: 100%;
+    margin: 0 auto;
   }
   .password-label {
     color: #fff;
