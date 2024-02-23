@@ -100,19 +100,26 @@ let passWordTwoEl = document.getElementById("generated-password2");
 
 function generatedPassword() {
   passWordOneEl.textContent = ""; // Clear existing password 1
-    passWordTwoEl.textContent = ""; // Clear existing password 2
-    
-    
-let inputEL = document.getElementById("input-el");
-    let inputValue = parseInt(inputEL.value);
-  for (let i = 0; i < inputValue; i++) {
-    let randomIndex1 = Math.floor(Math.random() * characters.length);
-    let randomIndex2 = Math.floor(Math.random() * characters.length);
-    passWordOneEl.textContent += characters[randomIndex1];
-    passWordTwoEl.textContent += characters[randomIndex2];
+  passWordTwoEl.textContent = ""; // Clear existing password 2
+
+  let inputEL = document.getElementById("input-el");
+  let inputValue = parseInt(inputEL.value);
+
+  // Validate inputValue
+  if (inputValue >= 8 && inputValue <= 20) {
+    for (let i = 0; i < inputValue; i++) {
+      let randomIndex1 = Math.floor(Math.random() * characters.length);
+      let randomIndex2 = Math.floor(Math.random() * characters.length);
+      passWordOneEl.textContent += characters[randomIndex1];
+      passWordTwoEl.textContent += characters[randomIndex2];
+    }
+  } else {
+    alert("Please enter a number between 8 and 128.");
   }
- 
 }
+
+
+
 
 // copying text to the clipboard
 
