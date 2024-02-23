@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 90%;
   height: 95%;
   background-color: #1f2937;
@@ -105,5 +105,6 @@ body {
   }
   .content {
     border: 0.5rem solid #161717;
+    justify-content: space-around;
   }
 }
