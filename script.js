@@ -114,7 +114,7 @@ function generatedPassword() {
       passWordTwoEl.textContent += characters[randomIndex2];
     }
   } else {
-    alert("Please enter a number between 8 and 128.");
+    alert("Please enter a number between 8 and 20.");
   }
 }
 
